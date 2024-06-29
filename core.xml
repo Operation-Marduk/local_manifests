@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+	<remote name="vendor"
+		fetch="https://github.com"
+		revision="lineage-20" />
+
+	<remote name="device"
+		fetch="https://github.com"
+		revision="lineage-20" />
+
+	<remote name="kernel"
+		fetch="https://github.com"
+		revision="lineage-20" />
+
+	<!--Device
+	Trees-->
+	<project path="device/xiaomi/elish" name="web1n/android_device_xiaomi_elish"
+		remote="device" />
+
+	<project path="device/xiaomi/sm8250-common"
+		name="xiaomi-sm8250-devs/android_device_xiaomi_sm8250-common" remote="device" />
+
+
+	<!--Kernel-->
+	<project path="kernel/xiaomi/elish" name="LineageOS/android_kernel_xiaomi_sm8250"
+		remote="kernel" />
+
+
+	<!-- Vendor folders -->
+	<project path="vendor/xiaomi/sm8250-common"
+		name="xiaomi-sm8250-devs/proprietary_vendor_xiaomi_sm8250-common" remote="vendor" />
+</manifest>
